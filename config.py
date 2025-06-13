@@ -3,11 +3,11 @@
 import os
 from os import getenv
 # ---------------R---------------------------------
-API_ID = int(os.environ.get("API_ID", "28964382"))
+API_ID = int(os.environ.get("API_ID", ""))
 # ------------------------------------------------
-API_HASH = os.environ.get("API_HASH", "c552befc21408d4ef175a66cb44cc33c")
+API_HASH = os.environ.get("API_HASH", "")
 # ----------------D--------------------------------
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "7836392521:AAEEvn5OEybMn2vwm6tTezGh2w_Qy7uuFnw")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 # -----------------A-------------------------------
 BOT_USERNAME = os.environ.get("@All_Extractorbot")
 # ------------------X------------------------------
