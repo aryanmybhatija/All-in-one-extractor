@@ -17,5 +17,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the rest of your application code
 COPY . .
 
-# Command to run Gunicorn for the Flask app and the Extractor
-CMD ["sh", "-c", "gunicorn app:app -b 0.0.0.0:8080 & python3 -m Extractor"]
+EXPOSE 8000
+
+CMD flask run -h 0.0.0.0 -p 8080 & python3 -m Extractor
